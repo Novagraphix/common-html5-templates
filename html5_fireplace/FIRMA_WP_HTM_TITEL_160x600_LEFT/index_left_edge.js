@@ -32,25 +32,11 @@
                 content: {
                     dom: [
                         {
-                            id: 'videoplaceholder',
-                            type: 'rect',
-                            rect: ['0px', '0px', '510px', '250px', 'auto', 'auto'],
-                            fill: ["rgba(0,0,0,1.00)"],
-                            stroke: [0,"rgb(0, 0, 0)","none"]
-                        },
-                        {
                             id: 'clicktag',
                             type: 'rect',
-                            rect: ['0px', '0px', '970px', '250px', 'auto', 'auto'],
+                            rect: ['0px', '0px', '160px', '600px', 'auto', 'auto'],
                             fill: ["rgba(0,0,0,0.00)",[270,[['rgba(255,255,255,0.00)',0],['rgba(255,255,255,0.00)',100]]]],
                             stroke: [0,"rgba(0,246,255,0.00)","none"]
-                        },
-                        {
-                            id: 'snd',
-                            type: 'rect',
-                            rect: ['475px', '10px', '24px', '24px', 'auto', 'auto'],
-                            fill: ["rgba(0,0,0,0)"],
-                            stroke: [0,"rgb(0, 0, 0)","none"]
                         },
                         {
                             id: 'btn_kaufen',
@@ -63,9 +49,9 @@
                     style: {
                         '${Stage}': {
                             isStage: true,
-                            rect: ['null', 'null', '970px', '250px', 'auto', 'auto'],
+                            rect: ['null', 'null', '160px', '600px', 'auto', 'auto'],
                             overflow: 'hidden',
-                            fill: ["rgba(255,255,255,1.00)"]
+                            fill: ["rgba(255,0,0,1.00)"]
                         }
                     }
                 },
@@ -124,14 +110,14 @@
                             'rgba(0,0,0,0.00)'
                         ],
                         [
-                            "eid1805",
+                            "eid1808",
                             "width",
                             0,
                             0,
                             "linear",
                             "${clicktag}",
-                            '970px',
-                            '970px'
+                            '160px',
+                            '160px'
                         ],
                         [
                             "eid765",
@@ -144,14 +130,14 @@
                             '774px'
                         ],
                         [
-                            "eid1804",
+                            "eid1809",
                             "height",
                             0,
                             0,
                             "linear",
                             "${clicktag}",
-                            '250px',
-                            '250px'
+                            '600px',
+                            '600px'
                         ],
                         [
                             "eid1806",
@@ -177,11 +163,11 @@
                     dom: [
                         {
                             rect: ['0px', '0px', '114px', '105px', 'auto', 'auto'],
-                            tag: 'img',
+                            fill: ['rgba(0,0,0,0)', 'images/b_kaufen.png', '0px', '0px'],
                             id: 'b_kaufen',
                             opacity: '1',
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/b_kaufen.png', '0px', '0px']
+                            tag: 'img'
                         }
                     ],
                     style: {
@@ -202,5 +188,5 @@
 
     AdobeEdge.registerCompositionDefn(compId, symbols, fonts, scripts, resources, opts);
 
-    if (!window.edge_authoring_mode) AdobeEdge.getComposition(compId).load("index_edgeActions.js");
+    if (!window.edge_authoring_mode) AdobeEdge.getComposition(compId).load("index_left_edgeActions.js");
 })("pp2-12844647");
