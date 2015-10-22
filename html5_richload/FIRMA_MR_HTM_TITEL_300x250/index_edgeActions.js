@@ -54,6 +54,11 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // Aliase für häufig
                 }
              }, delay);
          }
+         
+         container = myFT.$("#Stage");
+         
+         clicktag = document.getElementById("Stage_clicktag");
+         myFT.applyClickTag(clicktag, 1);
 
       });
       //Edge binding end

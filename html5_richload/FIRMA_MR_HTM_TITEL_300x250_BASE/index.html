@@ -1,7 +1,7 @@
 <html>
 	<head>
 	    <style>
-			#container {
+			#Stage {
 				width: 300px;
 				height: 250px;
 				position: absolute;
@@ -21,14 +21,13 @@
 	    </style>
 	</head>
 	<body>
-		<div id="container">
-			<ft-richload id="sRichload"></ft-richload>
+		<div id="Stage" class="pp2-12844647">
+			<ft-richload name="sRichload" id="sRichload"></ft-richload>
 		</div>
 
-		<script src="http://cdn.flashtalking.com/frameworks/js/api/2/8/html5API.js"></script>
+		<script src="http://cdn.flashtalking.com/frameworks/js/api/2/9/html5API.js"></script>
 		<script>
-		    var myFT = new FT(),
-		    container = FT.query("#container");
+		    container = myFT.$("#Stage");
 		</script>
 	</body>
 </html>

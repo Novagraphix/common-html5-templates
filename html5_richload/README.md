@@ -4,8 +4,8 @@
 
 Es benötigt 2 Verzeichnisse, welche wie folgt aussehen:
 
-        $ FIRMA_XX_HTML5_**TITEL**_**WIDTH**x**HEIGHT**
-        $ FIRMA_XX_HTML5_**TITEL**_**WIDTH**x**HEIGHT**_BASE
+        $ FIRMA_XX_HTM_**TITEL**_**WIDTH**x**HEIGHT**
+        $ FIRMA_XX_HTM_**TITEL**_**WIDTH**x**HEIGHT**_BASE
 
 ### DAS BASE-VERZEICHNIS
 
@@ -16,50 +16,19 @@ Dann beides zippen und bei FT hochladen (Basefiles).
 
 ### DAS HTML5-ANIMATIONS-VERZEICHNIS
 
-In der ``index.html``, welche noch so umbenannt werden muss nach dem Erstellen des WM mit ANIMATE, muss folgendes eingegeben werden.
+In der ``index.html`` muss nichts geändert werden, wenn die Vorlage benutzt wird.
 
-Nach ``<!--Adobe Edge Runtime End-->``
+Clicktag ist in der ``.an``, sowie auch der CDN-Link zur FT JS.
 
-    <style>
-    #container {
-        width: 300px;
-        height: 250px;
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
-
-    ft-richload {
-        width: 300px;
-        height: 250px;
-    }
-
-    #sRichload {
-        width: 300px;
-        height: 250px;
-    }
-    </style>
-    </head>
-
-    <body>
-        <div id="container">
-            <div id="Stage" class="pp2-12844647"></div>
-        </div>
-        <script type="text/javascript">
-        container = FT.query("#container");
-
-        myFT.applyClickTag(container, 1);
-        </script>
-    </body>
-
-    </html>
-
-Die ``.an``-Datei löschen und den Rest zippen und bei FT hochladen (Richload-Files)
+Alles außer die ``.an``-Datei zippen und bei FT hochladen (Richload-Files)
 
 ## USAGE
 
 Beispieldateien und Verzeichnisse liegen hier im Ordner, sowie eine Vorlage für ein MR.
 
+ACHTUNG: Bei der Erstellung in Animate kann ein Javascriptfehler auftreten, da die FT JS in der BASE initialisiert wird. Eventuell temporär hinzufügen.
+
 ## CHANGELOG
 
 * 20.10.2015:   Initial Upload
+* 22.10.2015:   Vorlage verbessert, Clicktag im Projekt
