@@ -19,7 +19,7 @@ Der Topbanner hat einen auskommentierten Broadcast in ``document.compositionRead
 
 Clicktag ist in der ``.an``, sowie auch der CDN-Link zur FT JS.
 
-Alles außer die ``.an``-Datei zippen und bei FT hochladen (Richload-Files)
+Alles außer die ``.an``-Datei zippen und bei FT hochladen (Base-Files)
 
 ### SKYs
 
@@ -31,7 +31,7 @@ Der Sky hat einen auskommentierten ``talk``-Event + Funktion in ``document.compo
 
 Clicktag ist in der ``.an``, sowie auch der CDN-Link zur FT JS.
 
-Alles außer die ``.an``-Datei zippen und bei FT hochladen (Richload-Files)
+Alles außer die ``.an``-Datei zippen und bei FT hochladen (Base-Files)
 
 ## USAGE
 
